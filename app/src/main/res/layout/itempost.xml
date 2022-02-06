@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/laut_m"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/TimeText"
+        android:textColor="#ac69ff"
+        android:layout_alignTop="@+id/AvtorText"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avtor"
+        android:id="@+id/AvtorText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:textColor="#5cbeff"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="     "
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/AvtorText"
+        android:layout_toLeftOf="@+id/AvtorText"
+        android:layout_toStartOf="@+id/AvtorText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nazvanie"
+        android:id="@+id/NazvanieText"
+        android:textSize="24sp"
+        android:clickable="true"
+        android:textColor="#ff4f4f"
+        android:layout_below="@+id/AvtorText"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tag"
+        android:id="@+id/tagText"
+        android:layout_below="@+id/NazvanieText"
+        android:clickable="true"
+        android:textColor="#5a6cff"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="storia"
+        android:id="@+id/storia"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/tagText"
+        android:textColor="#ff8228"
+        android:layout_marginLeft="5dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarDownImag"
+        android:minHeight="5dip"
+        android:maxHeight="5dip"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_alignTop="@+id/AvtorText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/TimeText"
+        android:layout_toStartOf="@+id/TimeText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coment"
+        android:layout_below="@+id/imageViewDlin"
+        android:id="@+id/ComentText"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:textColor="#197b00"
+        android:layout_alignLeft="@+id/storia" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ComentText"
+        android:background="#784bff"
+        android:id="@+id/linearLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coment"
+        android:id="@+id/textReiteng"
+        android:clickable="true"
+        android:textSize="20sp"
+        android:textIsSelectable="true"
+        android:textColor="#f17002"
+        android:layout_alignTop="@+id/ComentText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:text="+"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#cfcfcf"
+        android:layout_toLeftOf="@+id/textReiteng"
+        android:layout_toStartOf="@+id/textReiteng"
+        android:layout_above="@+id/linearLayout" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/minPost"
+        android:text="--"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#cfcfcf"
+        android:layout_below="@+id/imageViewDlin"
+        android:layout_toRightOf="@+id/plusPost"
+        android:layout_toEndOf="@+id/plusPost" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/plusPost"
+        android:text="++"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#cfcfcf"
+        android:layout_below="@+id/imageViewDlin"
+        android:layout_toRightOf="@+id/ComentText"
+        android:layout_toEndOf="@+id/ComentText" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewDel"
+        android:text="-"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#cfcfcf"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_above="@+id/linearLayout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storia"
+        android:id="@+id/blockLayout"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewDlin"
+        android:text="Развернуть"
+        android:clickable="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#cfcfcf"
+        android:background="#5e5e5e"
+        android:layout_below="@+id/blockLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

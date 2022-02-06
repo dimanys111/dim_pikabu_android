@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_goriach"
+            android:checked="true"
+            android:title="Горячее" />
+        <item android:id="@+id/nav_luchs"
+            android:title="Лучшее" />
+        <item android:id="@+id/nav_sveg"
+            android:title="Свежее" />
+        <item android:id="@+id/nav_arhiv"
+            android:title="Архив" />
+        <item android:id="@+id/nav_favorit"
+            android:title="Избранное" />
+        <item android:id="@+id/del_arhiv"
+            android:title="Очистить КЭШ" />
+    </group>
+
+</menu>

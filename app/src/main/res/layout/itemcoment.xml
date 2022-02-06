@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/laut_com"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/TimeTextCom"
+        android:textColor="#ac69ff"
+        android:layout_alignTop="@+id/AvtorTextCom"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avtor"
+        android:id="@+id/AvtorTextCom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:textColor="#5cbeff"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="         "
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/AvtorTextCom"
+        android:layout_toLeftOf="@+id/AvtorTextCom"
+        android:layout_toStartOf="@+id/AvtorTextCom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nazvanie"
+        android:id="@+id/NazvanieTextCom"
+        android:textSize="19sp"
+        android:clickable="true"
+        android:textColor="#cacaca"
+        android:layout_below="@+id/AvtorTextCom"
+        android:layout_toRightOf="@+id/linearSmCom"
+        android:layout_toEndOf="@+id/linearSmCom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coment"
+        android:id="@+id/textReitengCom"
+        android:clickable="true"
+        android:textIsSelectable="true"
+        android:textColor="#f17002"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageViewCom"
+        android:layout_toEndOf="@+id/imageViewCom" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewCom"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/strelka"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/NazvanieTextCom"
+        android:layout_alignStart="@+id/NazvanieTextCom"
+        android:layout_alignBottom="@+id/textReitengCom" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#784bff"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/NazvanieTextCom"
+        android:layout_toRightOf="@+id/linearSmCom"
+        android:layout_toEndOf="@+id/linearSmCom" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="#ff7777"
+        android:id="@+id/linearSmCom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/linearLayout" />
+
+</RelativeLayout>
